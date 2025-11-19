@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сай | Съемка инпабликов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kharkiv+Tone&subset=cyrillic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Декоративные элементы -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+
+    <!-- Главная страница -->
+    <div id="main-page" class="page active">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <img src="shapka.png" alt="Шапка" class="shapka-image">
+                </div>
+            </div>
+            <div class="header-notice">
+                <i class="fas fa-exclamation-circle"></i>
+                Перед записью на съемку, пожалуйста, ознакомьтесь внимательно со всей информацией на сайте!
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="intro-section">
+                <div class="intro-content">
+                    <h2 class="intro-title">Привет! Я - Аня Сай! ☾</h2>
+                    <p class="intro-text">
+                        Занимаюсь съемкой инпабликов уже 3-ий год!
+                        <br>Я очень рада, что тебя заинтересовали мои работы ⋆˙⟡♡
+                        <br>Так что давай разберемся с правилами, прайсами и т.д.
+                    </p>
+                </div>
+            </section>
+
+            <div class="main-photo">
+                <img src="photo1.JPG" alt="Главная фотография">
+            </div>
+
+            <section class="navigation-section">
+                <div class="nav-grid">
+                    <div class="nav-card" onclick="navigateTo('price')">
+                        <div class="nav-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>ПРАЙС</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('service')">
+                        <div class="nav-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>ЧТО ВХОДИТ В СЪЕМКУ?</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('important')">
+                        <div class="nav-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>!ВАЖНО!</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('additional')">
+                        <div class="nav-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h3>ДОП. УСЛУГИ</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('work')">
+                        <div class="nav-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>КАК Я РАБОТАЮ?</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('examples')">
+                        <div class="nav-icon">
+                            <i class="fas fa-photo-video"></i>
+                        </div>
+                        <h3>ПРИМЕРЫ РАБОТ</h3>
+                    </div>
+
+                    <div class="nav-card" onclick="navigateTo('questionnaire')">
+                        <div class="nav-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3>АНКЕТА ДЛЯ ЗАПИСИ</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Остальные страницы остаются без изменений -->
+    <!-- Страница с прайсами -->
+    <div id="price" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Прайс-лист 🏷️</h2>
+        </div>
+
+        <div class="price-container">
+            <div class="price-card">
+                <div class="price-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Количество человек</h3>
+                </div>
+                <ul class="price-list">
+                    <li>
+                        <span class="price-amount">1-4 человека</span>
+                        <span class="price-value">2500₽</span>
+                    </li>
+                    <li>
+                        <span class="price-amount">5-8 человек</span>
+                        <span class="price-value">3500₽</span>
+                    </li>
+                    <li>
+                        <span class="price-amount">9-10 человек</span>
+                        <span class="price-value">4500₽</span>
+                    </li>
+                    <li class="price-note">
+                        <span class="price-amount">Более 10 человек</span>
+                        <span class="price-value">от 5000₽</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="price-card accent">
+                <div class="price-header">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>ПОДТАНЦ</h3>
+                </div>
+                <div class="podium-price">
+                    +300₽ за каждого танцора
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="price-header">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>ПЕРФОРМАНСЫ</h3>
+                </div>
+                <div class="price-description">
+                    <p>Перформансы снимаю! Прайс складывается из количества человек и суммы за монтаж.</p>
+                    <p><strong>Сколько стоит монтаж перформанса?</strong></p>
+                    <p>- Зависит от сложности работы!</p>
+                    <p>Мы с вами лично обсуждаем все детали, затем, я делаю примерную раскадровку. и говорю вам цену за
+                        монтаж.</p>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="price-header">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>КОММЕРЦИЯ</h3>
+                </div>
+                <div class="price-description">
+                    <p>Могу поснимать рекламные ролики, вилсы, видео с мастер классов и тд.</p>
+                    <p>Прайс уточняется индивидуально, зависит от задачи!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница с услугами -->
+    <div id="service" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Что входит в съемку? 🎬</h2>
+        </div>
+
+        <ul class="service-list">
+            <li class="service-item">
+                <i class="fas fa-clock"></i>
+                <span>2 часа работы</span>
+            </li>
+            <li class="service-item">
+                <i class="fas fa-film"></i>
+                <span>Монтаж видео</span>
+            </li>
+            <li class="service-item">
+                <i class="fas fa-images"></i>
+                <span>Исходники обложки</span>
+            </li>
+            <li class="service-item">
+                <i class="fas fa-edit"></i>
+                <div class="service-text">
+                    <span>3 круга правок</span>
+                    <small class="service-note">Далее правки за дополнительную плату</small>
+                </div>
+            </li>
+
+        </ul>
+        <div class="service-photo">
+            <img src="photo.JPG" alt="Что входит в съемку">
+        </div>
+    </div>
+
+    <!-- Страница с важной информацией -->
+    <div id="important" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Важная информация ⚠️</h2>
+        </div>
+
+        <div class="important-container">
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Предоплата 50%</h3>
+                    <p>При записи я вношу вас в свой календарь только после того, как вы мне отправите 50%
+                        предоплату за
+                        мою работу!</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-calendar-times"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Отмена съемки</h3>
+                    <p>Отменяете съемку за 3 дня до нее - я забираю ваши 50%!</p>
+                    <p class="accent-text">НО, если мы ее с вами переносим, то ваша предоплата просто остается у
+                        меня, и
+                        мы с вами ищем новую дату!</p>
+                </div>
+            </div>
+
+            <div class="important-item warning">
+                <div class="important-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Отмена в день съемки</h3>
+                    <p>Отмена день в день (без переноса) - скидываете мне 100% оплату</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Колонка</h3>
+                    <p>Нужна колонка? Пишите мне за <strong>сутки</strong> до съемки!!!</p>
+                    <p class="warning-text">День в день я вам колонку <strong>не</strong> привезу </p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Выезд в другие города</h3>
+                    <p>Я могу выезжать на съемки в другие города, но тогда рассчитывайте, что к прайсу съемки будут
+                        еще
+                        рассчитываться затраты на дорогу туда и обратно</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-retweet"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Количество дублей</h3>
+                    <p>Снимаю максимум 10 дублей вантейков!</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-hdd"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Хранение материалов</h3>
+                    <p>Исходники и ваш готовый кавер лежит на диске <span class="highlight">1 месяц</span>, потом я
+                        все
+                        удаляю!</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Соло и дуэты</h3>
+                    <p>Соло и дуэт без подтанца <strong>НЕ</strong> снимаю.</p>
+                    <p>Если у вас какая-нибудь творческая постановка, то я готова рассмотреть ваше предложение ♡</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Продление съемки</h3>
+                    <p>Цена в прайс-листе указана за 2 часа моей работы, продление на час + половина суммы.</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Дедлайн по монтажу</h3>
+                    <p>Дедлайн по монтажу у меня - 7 дней.</p>
+                    <p>В зависимости от загруженности дедлайн может меняться, буду держать вас в курсе!</p>
+                </div>
+            </div>
+
+            <div class="important-item">
+                <div class="important-icon">
+                    <i class="fas fa-temperature-low"></i>
+                </div>
+                <div class="important-content">
+                    <h3>Съемка в холодную погоду</h3>
+                    <p>Если на улице меньше 5 градусов - доплата 1000₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница с дополнительными услугами -->
+    <div id="additional" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Дополнительные услуги ✨</h2>
+        </div>
+
+        <div class="additional-container">
+            <div class="additional-card">
+                <div class="additional-header">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Срочный монтаж</h3>
+                </div>
+                <div class="additional-price">500₽</div>
+                <p class="additional-description">Быстро выбираете дубль и я в ночь его вам монтирую! 🌙</p>
+            </div>
+
+            <div class="additional-card">
+                <div class="additional-header">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Склейка</h3>
+                </div>
+                <div class="additional-price">150₽ <span class="price-unit">(1 шт)</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница с информацией о работе -->
+    <div id="work" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Как я работаю? 📸</h2>
+        </div>
+
+        <div class="work-container">
+            <div class="equipment-section">
+                <h3 class="section-title">Мое оборудование</h3>
+                <p class="equipment-description">Снимаю на iPhone 15 PRO Max + Zhiyun smooth 5S (стабилизатор)</p>
+
+                <div class="equipment-gallery">
+                    <div class="equipment-item">
+                        <div class="equipment-image">
+                            <img src="iphone.png" alt="iPhone 15 PRO Max">
+                        </div>
+                        <h4>iPhone 15 PRO Max</h4>
+                    </div>
+
+                    <div class="equipment-item">
+                        <div class="equipment-image stabilizer">
+                            <img src="stabik.webp" alt="Zhiyun Smooth 5S">
+                        </div>
+                        <h4>Zhiyun Smooth 5S</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-section">
+                <h3 class="section-title">Процесс съемки</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-content">
+                            <h4>Подготовка</h4>
+                            <p>Приезжаю заранее к началу вашей съемки и слушаю ваши пожелания!</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-content">
+                            <h4>Формат съемки</h4>
+                            <p>Могу вас снять как и в 0,5х (13 мм) формате, так и 1х (24 мм)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница с примерами работ -->
+    <div id="examples" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Примеры работ 📁</h2>
+        </div>
+
+        <div class="examples-container">
+            <div class="examples-content">
+                <div class="examples-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <h3>Примеры работ твои где?</h3>
+                <p>1. <a href="https://t.me/saifilm" target="_blank">В Telegram!</a> Можете
+                    просто полистать ленту на моём операторском канале! Либо поискать по хэштегам: #безмонтажа,
+                    #смонтажом. <br><br>2. Можете посмотреть плейлист с моими работами на ютубе! <a
+                        href="https://youtube.com/playlist?list=PL3DnaoY6COOkHJP21Dhn4-0cxFlAlvKMt&si=HGSqaIy4CQqQB_LU"
+                        target="_blank">Посмотреть</a><br>Плейлист с
+                    перформансами: <a
+                        href="https://youtube.com/playlist?list=PL3DnaoY6COOlobT4xPzHerw3b_A76CGMB&si=n5gcF7ecg0qsjOPj"
+                        target="_blank">Посмотреть</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница с анкетой для записи -->
+    <div id="questionnaire" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="navigateTo('main-page')">
+                <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <h2>Анкета для записи 📝</h2>
+        </div>
+
+        <div class="questionnaire-container">
+            <div class="questionnaire-content">
+                <div class="questionnaire-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3>Заполните анкету для записи</h3>
+                <div class="questionnaire-list">
+                    <p>Что танцуете?</p>
+                    <p>Сколько человек</p>
+                    <p>Время</p>
+                    <p>Локация</p>
+                    <p>Колонка нужна или нет?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
